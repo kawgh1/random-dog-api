@@ -60,7 +60,7 @@ function createSlideShow(images) {
         document.getElementById('slideshow').insertAdjacentHTML("beforeend", `<div class="slide" style="background-image: url('${images[currentPosition]}')"></div>`)
         deleteFirstPhotoDelay = setTimeout(function(){
             document.querySelector(".slide").remove()
-        }, 5000);
+        }, 8000);
 
         // increment currentPosition, but if it's the last image, reset back to 0 to start over
         if(currentPosition + 1 >= images.length) {
