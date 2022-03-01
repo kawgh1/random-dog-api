@@ -36,7 +36,6 @@ async function loadByBreed(breed) {
     if(breed != "Choose a dog breed"){
         const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`)
         const data = await response.json();
-        // only take breeds with more than 5 images
         console.log(data.message.length + " images of " + breed)
         createSlideShow(data.message)
         
@@ -61,7 +60,7 @@ function createSlideShow(images) {
         document.getElementById('slideshow').insertAdjacentHTML("beforeend", `<div class="slide" style="background-image: url('${images[currentPosition]}')"></div>`)
         deleteFirstPhotoDelay = setTimeout(function(){
             document.querySelector(".slide").remove()
-        }, 1000);
+        }, 3000);
 
         // increment currentPosition, but if it's the last image, reset back to 0 to start over
         if(currentPosition + 1 >= images.length) {

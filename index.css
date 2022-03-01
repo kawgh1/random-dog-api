@@ -22,7 +22,7 @@ body, * {
 }
 
 .header select {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .slideshow {
@@ -52,7 +52,7 @@ body, * {
     background-position: center center;
     opacity: 0;
     transform: scale(1);
-    transition: all .9s ease-out;
+    transition: all 2.9s ease-out;
 
 }
 
