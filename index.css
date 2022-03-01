@@ -13,7 +13,7 @@ body, * {
 
 .header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .header h1 {
@@ -52,7 +52,7 @@ body, * {
     background-position: center center;
     opacity: 0;
     transform: scale(1);
-    transition: all 2.9s ease-out;
+    transition: all 4.5s ease-out;
 
 }
 
